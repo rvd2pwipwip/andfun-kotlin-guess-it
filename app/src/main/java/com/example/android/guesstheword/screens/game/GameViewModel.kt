@@ -156,5 +156,8 @@ class GameViewModel : ViewModel() {
     }
 
     // TODO (06) Cancel the timer in onCleared
-
+    override fun onCleared() {
+        super.onCleared()
+        timer.cancel()
+    }
 }
